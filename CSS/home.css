@@ -1,28 +1,6 @@
-html{
-font-family: 'Roboto', sans-serif;
-}
-:root {
-	--title-color: #322153;
-	--primary-color: #34cb79;
-}
-*{
-	margin: 0;
-	padding: 0;
-}
-body{
-	background-color: #f0f0f5;
-	-webkit-font-smoothing: antialiased;
-}
-a{
-	text-decoration: none;
-}
-h1, h2, h3, h4,h5,h6{
-	color: var(--title-color);
-	font-family: 'Ubuntu', sans-serif;
-}
 #page-home{
 	height: 120vh;
-	background: url('icones/home-background.svg') no-repeat;
+	background: url('../icones/home-background.svg') no-repeat;
 	background-position: 35vw bottom;
 }
 #page-home .content{
@@ -48,7 +26,7 @@ h1, h2, h3, h4,h5,h6{
 	display: flex;
 	width: 20px;
 	height: 20px;
-	background-image: url('icones/log-in.svg');
+	background-image: url('../icones/log-in.svg');
 }
 #page-home main{
 	max-width: 560px;
@@ -92,27 +70,11 @@ h1, h2, h3, h4,h5,h6{
 }
 #page-home main span::after{
 	content: "";
-	background-image: url(icones/search.svg);
+	background-image: url(../icones/search.svg);
 	width: 20px;
 	height: 20px;
 }
 #page-home main strong{
 	flex: 1;
 	text-align: center;
-}
-@media only screen and (max-width: 900px) {
-	#page-home{background-position-x: 70vw;}
-	#page-home .content{
-		align-items: center;
-		text-align: center;
-	}
-	#page-home header a{
-		position: absolute;
-		bottom: 48px;
-		left: 50%;
-		transform: translateX(-50%);
-	}
-	#page-home main{
-		align-items: center;
-	}
 }
