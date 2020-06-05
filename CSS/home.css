@@ -1,5 +1,5 @@
 #page-home{
-	height: 120vh;
+	min-height: 120vh;
 	background: url('../icones/home-background.svg') no-repeat;
 	background-position: 35vw bottom;
 }
